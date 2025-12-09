@@ -2,7 +2,9 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import Teacher.Teacher;
+import com.example.demo.model.Teacher;
+
+
 
 public interface TeacherService {
 	
