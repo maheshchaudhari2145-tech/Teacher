@@ -3,21 +3,21 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.repository.TeacherRepository;
 
 import Teacher.Teacher;
 
+@Service
 public class TeacherServiceImpl implements TeacherService {
-	
+
 	@Autowired
 	private TeacherRepository tr;
-	
+
 	@Override
 	public void add(Teacher t) {
 		tr.save(t);
-		
-		
 
 	}
 
@@ -25,7 +25,7 @@ public class TeacherServiceImpl implements TeacherService {
 	public List<Teacher> display() {
 		// TODO Auto-generated method stub
 		return tr.findAll();
-		
+
 	}
 
 	@Override
