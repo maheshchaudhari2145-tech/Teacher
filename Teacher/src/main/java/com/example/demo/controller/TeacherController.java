@@ -14,31 +14,28 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Teacher;
 import com.example.demo.service.TeacherService;
 
-
-
-
 @RestController
 public class TeacherController {
-	
+
 	@Autowired
 	private TeacherService ts;
-	
+
 	@PostMapping("add")
 	public void add(@RequestBody Teacher t) {
 		ts.add(t);
 	}
-	
+
 	@GetMapping("display")
-	public List<Teacher>display(){
+	public List<Teacher> display() {
 		return ts.display();
 	}
-	
+
 	@DeleteMapping("delete={id}")
 	public void delete(@PathVariable Integer id) {
 		ts.delete(id);
-		
+
 	}
-	
+
 	@PutMapping("update={id}")
 	public Teacher update(@PathVariable Integer id, @RequestBody Teacher t) {
 		return ts.update(id, t);

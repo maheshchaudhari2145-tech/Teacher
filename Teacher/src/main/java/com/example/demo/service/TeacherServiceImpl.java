@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import com.example.demo.model.Teacher;
 import com.example.demo.repository.TeacherRepository;
 
-
 @Service
 public class TeacherServiceImpl implements TeacherService {
 

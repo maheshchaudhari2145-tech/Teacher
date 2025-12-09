@@ -5,8 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.example.demo.model.Teacher;
 
-
-
 @Repository
 public interface TeacherRepository extends JpaRepository<Teacher, Integer> {
 

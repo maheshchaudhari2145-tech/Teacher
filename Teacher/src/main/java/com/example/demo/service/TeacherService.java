@@ -4,14 +4,14 @@ import java.util.List;
 
 import com.example.demo.model.Teacher;
 
-
-
 public interface TeacherService {
-	
+
 	void add(Teacher t);
-	List<Teacher>display();
+
+	List<Teacher> display();
+
 	void delete(Integer id);
+
 	Teacher update(Integer id, Teacher t);
-	
 
 }
